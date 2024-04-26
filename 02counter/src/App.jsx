@@ -18,9 +18,14 @@ let [value, setValue] = useState(0)
   }
 
   const decreaseValue = () => {
-    value = value-1
-    setValue(value)
-    console.log(value)
+
+    if (value > 0) {
+      setValue(prevValue => prevValue - 1);
+    }
+
+    // value = value-1
+    // setValue(value)
+    // console.log(value)
 
     // document.querySelector('h2').textContent = `Value: ${value}`
   }
