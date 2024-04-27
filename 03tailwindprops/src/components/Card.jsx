@@ -1,6 +1,6 @@
 
 
-const Card = ( {username, btnText = "meme"} ) => {
+const Card = ({username, btnText = "meme"}) => {
     console.log(username,btnText);
     return (
         <div className="relative h-[400px] w-[300px] rounded-md">

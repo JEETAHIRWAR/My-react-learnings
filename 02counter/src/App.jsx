@@ -6,12 +6,26 @@ function App() {
 let [value, setValue] = useState(0)
 
 
+
   // let value = 0
 
   const increaseValue = () => {
-    value = value+1
-    setValue(value)
-    console.log(value)
+    // value = value+1
+    setValue(value +1)
+    // console.log(value)
+
+    // setValue(prevValue => { 
+    //   const  newValue = prevValue+1; 
+    //   console.log(newValue); 
+    //   return newValue
+    // })
+
+
+
+    // setValue((prevValue => prevValue+1))
+    // setValue((prevValue => prevValue+1))
+    // setValue((prevValue => prevValue+1))
+    // setValue((prevValue => prevValue+1))
 
     // document.querySelector('h2').textContent = `Value: ${value}`
 
